@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="claim.css">
+</head>
+<body>
+    <header>
+    <!---this is the header section-->
+    <h1>ShareCircle</h1>
+    <p>Share . Care . Community</p>
+
+    </header>
+
+<main class="claim-container">
+  <h2>Claim This Item</h2>
+  <p>Please provide your contact details to confirm your claim. Pick up within 48 hours.</p>
+
+  <form id="claimForm">
+    <label for="name">Your Name *</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="phone">Phone Number *</label>
+    <input type="tel" id="phone" name="phone" required />
+
+    <button type="submit">Submit Claim</button>
+  </form>
+
+  <button onclick="window.location.href='home.html'">Back to Home</button>
+  <!---the script for success msg-->
+  <script>
+    // attaching even listener to the form 
+    document.getElementById("claimForm").addEventListener("submit", function(event){
+        event.preventDefault();
+        //showing success popup
+        alert("Claim submitted successfully! Please collect your item within 48 hours.");
+        
+    });
+  </script>
+</main>
+
+</body>
+</html>

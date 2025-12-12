@@ -1,0 +1,97 @@
+/*setting the theme default browser styles*/
+body{
+    margin: 0; /* remove default margin around the page */
+    font-family: 'Segoe UI', Arial, sans-serif; /* clean readable font */
+    background-color: #f9f9f9; /* light background for eco-friendly feel */
+    color: #333; 
+}
+
+/*Header section at the very top*/
+header{
+    background-color: #a3c9a8; /* soft green to match environment theme */
+    text-align: center; /* center the title and tagline */
+    padding: 20px;
+    position: relative;/*this allows us to position child elemnts*/
+    color: white; /* white text on green background */
+}
+
+header h1{
+    margin: 0; /*removing default spacing*/
+    font-size: 2em; 
+}
+
+header p{
+    margin: 5px 0 0; /*small spacing above tagline*/
+    font-size: 1.1em;
+}
+
+/*setting up the claim contents*/
+.claim-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.claim-container h2 {
+  color: #4CAF50;
+}
+
+
+/*styling the form contents*/
+form {
+  margin-top: 20px;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%; /*setting full width inputs*/
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/*centering the submit button*/
+form button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-left: 50px auto;
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #45a049; /*setting darker green on hover*/
+}
+
+/*styling the back button to home button*/
+.claim-container button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.claim-container button:hover {
+  background: #45a049;
+}
