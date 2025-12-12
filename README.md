@@ -6,7 +6,7 @@ Food & Resource Sharing Platform is an application that allows users to post sur
 
 This platform enables seamless, community sharing of surplus food and household resources by connecting donors, recipients, and volunteers through a verified community network. It offers smart matching, impact tracking, and transparent logistics to support households in reducing waste as well as building resilient and caring communities.
 
-## Getting Started //how to use the app
+## Getting Started / How to Use the App
 
 ## Functionalities
 
