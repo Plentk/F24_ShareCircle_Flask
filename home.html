@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShareCircle</title>
     <link rel="stylesheet" href="home.css">
+    <script>
+        let search_category_all = document.getElementById("button");
+    </script>
 </head>
 <body>
     <!---this is the header section-->
@@ -15,13 +18,13 @@
 
     <!---Search and filter section here-->
     <section class="controls">
-        <input type="text" placeholder="Search items...." id="searchBar">
+        <input type="text" placeholder="Search items......" id="searchBar">
         <div class="filters">
-            <button>All Items</button>
-            <button>Food</button>
-            <button>Clothes</button>
-            <button>Household</button>
-            <button>Others</button>
+            <button id="searchCategoryAll">All Items</button>
+            <button id="searchCategoryFood">Food</button>
+            <button id="searchCategoryClothes">Clothes</button>
+            <button id="searchCategoryHousehold">Household</button>
+            <button id="searchCategoryOthers">Others</button>
         </div>
 
         <div class="sort">
@@ -36,7 +39,7 @@
     <!---items that are listed-->
     <section class="item-list">
         <!---each item is represnted in a card-->
-        <div class = "item-card">
+        <div id="item itemOther" class = "item-card">
             <img src="book.jpg" alt="school books">
             <span class="category">Other</span>
             <h3>O-level math books for free 2025 edition</h3>
@@ -46,7 +49,7 @@
             <button class="claim-btn">Claim item</button>
         </div>
 
-        <div class="item-card">
+        <div id="item itemClothes" class="item-card">
             <img src="blazers.jpg" alt="professional clothing">
             <span class="category">Clothes</span>
             <h3>Prfesssional men's blazer</h3>
@@ -56,7 +59,7 @@
             <button class="claim-btn">Claim Item</button>
         </div>
 
-        <div class="item-card">
+        <div id="item itemClothes" class="item-card">
             <img src="jackets.jpg" alt="winter jackets">
             <span class="category">Clothes</span>
             <h3>winter jackets</h3>
@@ -66,8 +69,8 @@
             <button class="claim-btn">Claim Item</button>
         </div>
 
-        <div class="item-card">
-            <img src="sofa.jpg" alt="sofa nad coffee table">
+        <div id="item itemHousehold" class="item-card">
+            <img src="sofa.jpg" alt="sofa and coffee table">
             <span class="category">Household</span>
             <h3>Sofa and coffee <table></table></h3>
             <p>Minor wear but still very functional, must pick up by this weekend </p>
@@ -76,7 +79,7 @@
             <button class="claim-btn">Claim Item</button>
         </div>
 
-        <div class="item-card">
+        <div id="item itemHousehold" class="item-card">
             <img src="kitchen-pot.jpg" alt="Kitchen Pot Utensils">
             <span class="category">Household</span>
             <h3>kitchen utensils & cookwear set</h3>
