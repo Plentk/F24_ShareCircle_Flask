@@ -2,14 +2,24 @@
 
 Food & Resource Sharing Platform is an application that allows users to post surplus food, clothes, or resources they no longer need to a dashboard. Others nearby can then claim them — creating a mini Craigslist for survival needs. This will help reduce waste, fight poverty, and strengthen local community support networks by making sharing easier, faster, and more transparent.
 
-## Getting Started
+## Technical Description
+
+This platform enables seamless, community sharing of surplus food and household resources by connecting donors, recipients, and volunteers through a verified community network. It offers smart matching, impact tracking, and transparent logistics to support households in reducing waste as well as building resilient and caring communities.
+
+## Getting Started / How to Use the App
 
 ## Functionalities
 
-Application allows users to take pictures of the products that they would like to give away and post it onto a dashboard for other users to preview
+Donor Management Portal: A secure form allows donors to easily list surplus items; enriching posts with descriptions, images, and pick-up details
 
-A map function that utilies geolocation in order to link the consumer and seller 
+Dynamic Community Feed: A real-time, browsable, card-based feed that displays all available and claimable items within the user's network
 
-"Claim item" function for the user to reserve the item for themselves
+Privacy-First Claim System: An anonymous, one-click reservation function allows recipients to claim items discreetly, protecting user privacy while facilitating quick distribution
+
+Intelligent Discovery Tools: Advanced filters and a search function enable users to efficiently navigate listings by category, location, dietary need, or item type
+
+Geo-Aware Matching: Integrated mapping and an automated "Nearby Items" engine surface available resources within a user-configured radius, optimising local sharing and reducing logistical friction
+
+Community Amplification: Integrated link sharing allows users to easily propagate listings across social networks and community channels, expanding reach and engagement
 
 ## References
