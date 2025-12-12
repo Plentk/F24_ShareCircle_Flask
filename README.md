@@ -8,7 +8,7 @@ This platform enables seamless, community sharing of surplus food and household 
 
 ## Getting Started / How to Use the Application
 
-1. Open-Source Application does not require login to view/browse items on community feed; allowing easy access for those digitally lliterate
+1. Open-Source Application does not require login to view/browse items on community feed; allowing easy access for those digitally illiterate
 2. Use the "Post Item" button to post items the user no longer needs
 3. Each "Post Item" allows one type of item to be posted at a time
 4. "Map" button allows user to view available items within their radius to reduce logistical difficulties
