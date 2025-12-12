@@ -107,10 +107,16 @@ header p{
 /* Each item card */
 .item-card{
     background-color: white; 
-    border-radius: 15px; 
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1); 
     padding: 15px;
     text-align: center; /*centers text inside card*/
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* subtle shadow */
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+
 }
 
 /* Images inside cards */
@@ -118,7 +124,7 @@ header p{
     width: 100%; 
     height: 180px; 
     object-fit: cover; /* crop image nicely */
-    border-radius: 12px; /* rounded image corners */
+    border-radius: 15px; /* rounded image corners */
 }
 
 /* Category tag */
@@ -133,14 +139,19 @@ header p{
 
 /* styling on claim button */
 .claim-btn{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
     margin-top: 10px;
     padding: 10px;
-    width: 100%; /* button spans full card width */
+    width: 100%-30px; /* button spans full card width */
     background-color: #4CAF50; /* green button */
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 15px;
     cursor: pointer;
+    vertical-align: bottom;
 }
 
 .claim-btn:hover {
