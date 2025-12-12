@@ -1,0 +1,148 @@
+/* setting the theme default browser styles */
+body{
+    margin: 0; /* remove default margin around the page */
+    font-family: 'Segoe UI', Arial, sans-serif; /* clean readable font */
+    background-color: #f9f9f9; /* light background for eco-friendly feel */
+    color: #333; 
+}
+
+/* Header section at the very top */
+header{
+    background-color: #a3c9a8; /* soft green to match environment theme */
+    text-align: center; /* center the title and tagline */
+    padding: 20px;
+    position: relative;/*this allows us to position child elemnts*/
+    color: white; /* white text on green background */
+}
+
+header h1{
+    margin: 0; /* removing default spacing */
+    font-size: 2em; 
+}
+
+header p{
+    margin: 5px 0 0; /* small spacing above tagline */
+    font-size: 1.1em;
+}
+
+/*top right corner navigation buttons inside header */
+.top-buttons{
+    position: absolute; /*the position is relative to the header*/
+    top: 20px; /*distance from the top */
+    right: 20px;/*distance from right*/
+}
+
+
+.nav-btn{
+    margin-left: 10px;
+    padding: 8px 12px;
+    background-color: #f0c987;
+    color: #333;
+    text-decoration: none;/*removing the underline*/
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.nav-btn:hover{
+    background-color: #e0b96f;
+    color: white;
+}
+
+/* Controls section: search bar + filters + sort */
+.controls{
+    display: flex; /* placing elements side by side */
+    flex-direction: column; /* i stack vertically */
+    align-items: center; /* centering everything horizontally */
+    padding: 20px;
+    background-color: #e8f0ea; /* very light green background to match the theme*/
+}
+
+#searchBar{
+    width: 60%; /* wide search bar */
+    padding: 10px;
+    border-radius: 8px; /* rounded corners for search bar */
+    border: 1px solid #ccc; /* light border */
+    margin-bottom: 15px; /* space below search bar */
+}
+
+/* Filter buttons row */
+.filters{
+    margin: 10px 0;
+}
+
+.filters button{
+    margin: 5px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px; /* pill-shaped buttons */
+    background-color: #d4e9d7; /* light green background */
+    cursor: pointer;
+}
+
+.filters button:hover{
+    background-color: #4CAF50; /* darker green on hover */
+    color: white;
+}
+
+/* Sort dropdown */
+.sort {
+    margin-top: 10px;
+}
+
+.sort select{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Item list section: grid of cards */
+.item-list{
+    display: grid; /* use CSS grid for layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    /* responsive: as many columns as fit, each at least 250px wide */
+    gap: 20px; /* space between cards */
+    padding: 20px;
+}
+
+/* Each item card */
+.item-card{
+    background-color: white; /* card background */
+    border-radius: 15px; /* rounded corners */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* subtle shadow */
+    padding: 15px;
+    text-align: center; /* center text inside card */
+}
+
+/* Images inside cards */
+.item-card img{
+    width: 100%; /* image fills card width */
+    height: 180px; /* fixed height for consistency */
+    object-fit: cover; /* crop image nicely */
+    border-radius: 12px; /* rounded image corners */
+}
+
+/* Category tag */
+.category{
+    display: inline-block;
+    background-color: #f0c987; /* earthy accent color */
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* styling on claim button */
+.claim-btn{
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%; /* button spans full card width */
+    background-color: #4CAF50; /* green button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.claim-btn:hover {
+    background-color: #45a049; /* darker green on hover */
+}
