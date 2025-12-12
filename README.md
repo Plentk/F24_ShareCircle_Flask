@@ -10,15 +10,16 @@ This platform enables seamless, community sharing of surplus food and household 
 
 ## Functionalities
 
-Application allows users to take pictures of the products that they would like to give away and post it onto a dashboard for other users to preview
-Post 
+Donor Management Portal: A secure form allows donors to easily list surplus items; enriching posts with descriptions, images, and pick-up details
 
-"Anonymous Quick Claim" function for the user to reserve the item without exposing their identity
+Dynamic Community Feed: A real-time, browsable, card-based feed that displays all available and claimable items within the user's network
 
-Filters/Search function for users to quickly and efficiently navigate the dashboard 
+Privacy-First Claim System: An anonymous, one-click reservation function allows recipients to claim items discreetly, protecting user privacy while facilitating quick distribution
 
-Map Integration and Automated "Nearby Items" function that would show items that are available and are within a radius from the user
+Intelligent Discovery Tools: Advanced filters and a search function enable users to efficiently navigate listings by category, location, dietary need, or item type
 
-Link Sharing for users to share their items to the community
+Geo-Aware Matching: Integrated mapping and an automated "Nearby Items" engine surface available resources within a user-configured radius, optimising local sharing and reducing logistical friction
+
+Community Amplification: Integrated link sharing allows users to easily propagate listings across social networks and community channels, expanding reach and engagement
 
 ## References
