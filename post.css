@@ -1,0 +1,87 @@
+/*setting up the default base theme */
+body{
+    margin: 0;
+    font-family:segoe UI, Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+
+}
+/*styling the header*/
+header{
+    background-color: #a3c9a8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    margin: 0;
+    font-size: 2em;
+}
+
+header p{
+    margin-top: 5px;
+    font-size: 1.1em;
+}
+
+/*setting up the form container*/
+.form-container{
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-container h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*form inputs and labels*/
+form label{
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+} 
+
+form input, form textarea,form select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.9em;
+    box-sizing: border-box;
+}
+
+form textarea{
+    resize: vertical;
+    min-height: 80px;
+}
+
+/*setting up the form buttons*/
+.form-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.form-buttons button{
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-buttons button[type="submit"]{
+    background-color: #4caf50;
+    color: white;
+}
+
+.form-buttons button:hover{
+    opacity: 0.9;
+}
