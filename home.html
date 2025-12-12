@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShareCircle</title>
     <link rel="stylesheet" href="home.css">
+    
 </head>
 <body>
     <!---this is the header section-->
@@ -22,13 +23,13 @@
 
     <!---Search and filter section here-->
     <section class="controls">
-        <input type="text" placeholder="Search items...." id="searchBar">
+        <input type="text" placeholder="Search items......" id="searchBar">
         <div class="filters">
-            <button>All Items</button>
-            <button>Food</button>
-            <button>Clothes</button>
-            <button>Household</button>
-            <button>Others</button>
+            <button id="searchCategoryAll">All Items</button>
+            <button id="searchCategoryFood">Food</button>
+            <button id="searchCategoryClothes">Clothes</button>
+            <button id="searchCategoryHousehold">Household</button>
+            <button id="searchCategoryOthers">Others</button>
         </div>
 
         <div class="sort">
@@ -43,7 +44,7 @@
     <!---items that are listed-->
     <section class="item-list">
         <!---each item is represnted in a card-->
-        <div class = "item-card">
+        <div class = "item-card item itemOthers">
             <img src="book.jpg" alt="school books">
             <span class="category">Others</span>
             <h3>O-level math books for free 2025 edition</h3>
@@ -53,7 +54,7 @@
             <button class="claim-btn" onclick="window.location.href='claim-Item.html'">Claim item</button>
         </div>
 
-        <div class="item-card">
+        <div class="item-card item itemClothes">
             <img src="blazers.jpg" alt="professional clothing">
             <span class="category">Clothes</span>
             <h3>Prfesssional men's blazer</h3>
@@ -63,7 +64,7 @@
             <button class="claim-btn" onclick="window.location.href='claim-Item.html'">Claim item</button>
         </div>
 
-        <div class="item-card">
+        <div class="item-card item itemClothes">
             <img src="jackets.jpg" alt="winter jackets">
             <span class="category">Clothes</span>
             <h3>winter jackets</h3>
@@ -73,8 +74,8 @@
             <button class="claim-btn" onclick="window.location.href='claim-Item.html'">Claim item</button>
         </div>
 
-        <div class="item-card">
-            <img src="sofa.jpg" alt="sofa nad coffee table">
+        <div class="item-card item itemHousehold">
+            <img src="sofa.jpg" alt="sofa and coffee table">
             <span class="category">Household</span>
             <h3>Sofa and coffee <table></table></h3>
             <p>Minor wear but still very functional, must pick up by this weekend </p>
@@ -83,7 +84,7 @@
             <button class="claim-btn" onclick="window.location.href='claim-Item.html'">Claim item</button>
         </div>
 
-        <div class="item-card">
+        <div class="item-card item itemHousehold">
             <img src="kitchen-pot.jpg" alt="Kitchen Pot Utensils">
             <span class="category">Household</span>
             <h3>kitchen utensils & cookwear set</h3>
@@ -93,9 +94,9 @@
             <button class="claim-btn" onclick="window.location.href='claim-Item.html'">Claim item</button>
         </div>
 
-        <div class="item-card">
+        <div class="item-card item itemFood">
             <img src="veg.jpg" alt="vegetables">
-            <span class="category">Household</span>
+            <span class="category">Food</span>
             <h3>Fresh Vegetables & Fruits</h3>
             <p>Surplus from farmers market. Includes tomatoes, lettuce, apples, and carrots. Perfect condition, pick up today! </p>
             <p class="location">Macpherson CC , singapore</p>
@@ -104,5 +105,71 @@
         </div>
     </section>
     
+    <script>
+        let searchCategoryAll = document.getElementById("searchCategoryAll");
+        searchCategoryAll.addEventListener("click", filterAll);
+        function filterAll() {
+            const itemsAll = document.getElementsByClassName("item");
+            for (let i = 0; i < itemsAll.length; i++) {
+                itemsAll[i].style.display = "block";
+            };
+        };
+
+        let searchCategoryFood = document.getElementById("searchCategoryFood");
+        searchCategoryFood.addEventListener("click", filterFood);
+        function filterFood() {
+            const itemsAll = document.getElementsByClassName("item");
+            for (let i = 0; i < itemsAll.length; i++) {
+                if (itemsAll[i].classList.contains("itemFood")) {
+                    itemsAll[i].style.display = "block";
+                } else {
+                    itemsAll[i].style.display = "none";
+                };
+                
+            };
+        };
+
+        let searchCategoryClothes = document.getElementById("searchCategoryClothes");
+        searchCategoryClothes.addEventListener("click", filterClothes);
+        function filterClothes() {
+            const itemsAll = document.getElementsByClassName("item");
+            for (let i = 0; i < itemsAll.length; i++) {
+                if (itemsAll[i].classList.contains("itemClothes")) {
+                    itemsAll[i].style.display = "block";
+                } else {
+                    itemsAll[i].style.display = "none";
+                };
+                
+            };
+        };
+
+        let searchCategoryHousehold = document.getElementById("searchCategoryHousehold");
+        searchCategoryHousehold.addEventListener("click", filterHousehold);
+        function filterHousehold() {
+            const itemsAll = document.getElementsByClassName("item");
+            for (let i = 0; i < itemsAll.length; i++) {
+                if (itemsAll[i].classList.contains("itemHousehold")) {
+                    itemsAll[i].style.display = "block";
+                } else {
+                    itemsAll[i].style.display = "none";
+                };
+                
+            };
+        };
+
+        let searchCategoryOthers = document.getElementById("searchCategoryOthers");
+        searchCategoryOthers.addEventListener("click", filterOthers);
+        function filterOthers() {
+            const itemsAll = document.getElementsByClassName("item");
+            for (let i = 0; i < itemsAll.length; i++) {
+                if (itemsAll[i].classList.contains("itemOthers")) {
+                    itemsAll[i].style.display = "block";
+                } else {
+                    itemsAll[i].style.display = "none";
+                };
+                
+            };
+        };
+    </script>
 </body>
 </html>
