@@ -1,5 +1,7 @@
 ## Introduction
 
+A Flask Implementation of ShareCircle by Plentk, an application allowing users to post surplus items no longer needed to a dashboard, where others may claim, made during a team hackathon hosted by BuildingBloCS December Conference 2025 focusing on web development from 11 to 12 December 2025
+
 ShareCircle is an application that allows users to post surplus food, clothes, or resources they no longer need to a dashboard. Others nearby can then claim them — creating a mini Craigslist for survival needs. This will help reduce waste, fight poverty, and strengthen local community support networks by making sharing easier, faster, and more transparent.
 
 ## Technical Description
@@ -8,14 +10,14 @@ This platform enables seamless, community sharing of surplus food and household 
 
 ## Getting Started / How to Use the Application
 
-1. Open-Source Application does not require login to view/browse items on community feed; allowing easy access for those digitally illiterate
+~~1. Open-Source Application does not require login to view/browse items on community feed; allowing easy access for those digitally illiterate
 2. Use the "Post Item" button to post items the user no longer needs
 3. Each "Post Item" allows one type of item to be posted at a time
 4. "Map" button allows user to view available items within their radius to reduce logistical difficulties
 5. "Filter" buttons and "Search" function for quick finds on desired item(s)
 6. "Sort By" function allows items to be listed in a chronological order for easy viewing
 7. Once desired item is found, click the "Claim item" button to notify the donator and user that the item is reserved
-8. Donator will communicate with user on desired way(s) to collect the item(s)
+8. Donator will communicate with user on desired way(s) to collect the item(s)~~
 
 ## Functionalities
 
