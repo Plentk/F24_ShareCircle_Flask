@@ -13,14 +13,20 @@ def init_database(database):
   conn = connect_to_database(database)
   cursor = conn.cursor()
   cursor.execute("""
-                CREATE TABLE IF NOT EXISTS (
+                CREATE TABLE IF NOT EXISTS category (
+                 id INTEGER PRIMARY KEY AUTOINCREMENT,
+                 name TEXT NOT NULL UNIQUE
+                 );
+                CREATE TABLE IF NOT EXISTS items_to_donate (
                  id INTEGER PRIMARY KEY AUTOINCREMENT,
                  title TEXT NOT NULL,
-                 category TEXT NOT NULL,
                  description TEXT NOT NULL,
                  location TEXT NOT NULL,
-                 time TEXT NOT NULL,
-                 filename TEXT
+                 create_time TEXT NOT NULL,
+                 pickup_time TEXT NOT NULL,
+                 image_filename TEXT,
+                 category_id INTEGER NOT NULL,
+                 FOREIGN KEY (category_id) REFERENCES category(id)
                  );
                  """)
   conn.commit()
@@ -30,7 +36,10 @@ init_database(sc_database)
 
 @app.route("/", methods=["GET", "POST"])
 def sc_main():
-  
+  conn = connect_to_database(sc_database)
+  cursor = conn.cursor()
+  cursor.execute("""
+                 """)
   return render_template("home.html")
 
 @app.route("/home", methods=["GET", "POST"])
