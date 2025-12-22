@@ -22,8 +22,8 @@ def init_database(database):
                  title TEXT NOT NULL,
                  description TEXT NOT NULL,
                  location TEXT NOT NULL,
-                 create_time TEXT NOT NULL,
-                 pickup_time TEXT NOT NULL,
+                 create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                 pickup_time TEXT NULL,
                  image_filename TEXT,
                  category_id INTEGER NOT NULL,
                  FOREIGN KEY (category_id) REFERENCES category(id)
