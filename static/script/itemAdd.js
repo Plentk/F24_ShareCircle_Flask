@@ -1,3 +1,4 @@
+// itemAdd javascript file currently not in use
 function newItem(title, category, description, location, image_url) {
   this.title = title;
   this.category = category;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShareCircle</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style/home.css')}}">
     
 </head>
 <body>
@@ -15,8 +15,8 @@
     </header>
     <!---navigation btn for map and create post-->
     <div class="top-buttons">
-        <a href="map.html" class="nav-btn">Map</a>
-        <a href="post.html" class="nav-btn">Post Item</a>
+        <a href="{{ url_for('sc_map') }}" class="nav-btn">Map</a>
+        <a href="{{ url_for('sc_post') }}" class="nav-btn">Post Item</a>
     </div>
 
     
@@ -104,12 +104,12 @@
             <button class="claim-btn" onclick="window.location.href='claim.html'">Claim item</button>
         </div>
         
-        <script type="module" src="loadItems.js"></script>
+        <script type="module" src="{{ url_for('script', filename = 'script/loadItems.js')}}"></script>
 
     </section>
     
     <!-- Scripts toggle which category of items is shown on the screen -->
-    <script src="home.js">
+    <script src="{{ url_for('static', filename = 'script/home.js')}}">
     </script>
 </body>
 </html>

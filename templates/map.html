@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map view in ShareCircle</title>
-    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style/map.css')}}">
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
@@ -19,8 +19,8 @@
 
     <!---navigation btn for map and create post-->
     <div class="top-buttons">
-        <a href="index.html" class="nav-btn">Home</a>
-        <a href="post.html" class="nav-btn">Post Item</a>
+        <a href="{{ url_for('sc_home') }}" class="nav-btn">Home</a>
+        <a href="{{ url_for('sc_post') }}" class="nav-btn">Post Item</a>
     </div>
     </header>
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Craeting post in ShareCircle</title>
-    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style/post.css')}}">
 </head>
 <body>
     <!---this is the header section-->
@@ -41,12 +41,12 @@
             <input type="text" id="address" name="address" placeholder="Enter pickup location" required>
 
             <!---setting up the img input bar-->
-            <label for="imageUrl">Image URL (optional)</label>
-            <input type="url" name="imageUrl" id="imageUrl" placeholder="https://example.com/image.jpg">
+            <label for="file">Choose Image:</label>
+            <input type="file" name="file" id="file" accept="image/**">
 
             <!---setting up the forms btn-->
             <div class="form-buttons">
-                <button type="button" onclick="location.href='index.html'">Cancel</button>
+                <button type="button" href="{{ url_for('sc_home') }}">Cancel</button>
                 <button type="submit">Post Item</button>
                 
             </div>

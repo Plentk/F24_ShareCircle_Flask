@@ -1,3 +1,4 @@
+// loadItems.js is supposed to load items from a json file. Currently deprecated.
 fetch("./shareCircleItems.json")
   .then(response => {
     if (!response.ok) {
