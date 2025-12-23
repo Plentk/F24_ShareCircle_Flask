@@ -3,11 +3,12 @@ import sqlite3
 import os
 from werkzeug.utils import secure_filename
 
-sc_database = ""
+sc_database = "sharecircle.db"
 app = Flask(__name__)
 
 def connect_to_database(database):
   conn = sqlite3.connect(database)
+  return conn
   
 def init_database(database):
   conn = connect_to_database(database)
@@ -16,7 +17,8 @@ def init_database(database):
                 CREATE TABLE IF NOT EXISTS category (
                  id INTEGER PRIMARY KEY AUTOINCREMENT,
                  name TEXT NOT NULL UNIQUE
-                 );
+                 );""")
+  cursor.execute("""
                 CREATE TABLE IF NOT EXISTS items_to_donate (
                  id INTEGER PRIMARY KEY AUTOINCREMENT,
                  title TEXT NOT NULL,
@@ -40,7 +42,7 @@ def sc_main():
   cursor = conn.cursor()
   cursor.execute("""
                  """)
-  return render_template("home.html")
+  return render_template("index.html")
 
 @app.route("/home", methods=["GET", "POST"])
 def sc_home():
