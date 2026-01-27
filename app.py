@@ -3,6 +3,7 @@ import sqlite3
 import os
 from werkzeug.utils import secure_filename
 
+sc_storage = "static/storage"
 sc_database = "sharecircle.db"
 app = Flask(__name__)
 
@@ -34,11 +35,11 @@ def init_database(database):
   conn.commit()
   conn.close()
 
-init_database(sc_database)
+init_database(f"{sc_storage}/{sc_database}")
 
 @app.route("/", methods=["GET", "POST"])
 def sc_main():
-  conn = connect_to_database(sc_database)
+  conn = connect_to_database(f"{sc_storage}/{sc_database}")
   cursor = conn.cursor()
   cursor.execute("""
                  """)
@@ -71,7 +72,7 @@ def sc_post():
       image.save(os.path.join("static/uploads", filename))
 
       # Save information to database
-      conn = connect_to_database(sc_database)
+      conn = connect_to_database(f"{sc_storage}/{sc_database}")
       cursor = conn.cursor()
       cursor.execute("""
                      INSERT INTO items_to_donate (title, description, location, image_filename, category_id) VALUES (?, ?, ?, ?, ?) 
