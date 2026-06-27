@@ -90,6 +90,11 @@ def sc_post():
     print("sc_post")
     return render_template("post.html")
 
+@app.route("/claim")
+def sc_claim():
+  print("sc_claim")
+  return render_template("claim.html")
+
 @app.route("/map")
 def sc_map():
   print("sc_map")
